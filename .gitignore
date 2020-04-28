@@ -1,0 +1,4 @@
+*.bit
+*~
+*.o
+bcc_tool
