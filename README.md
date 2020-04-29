@@ -1,4 +1,4 @@
-bcc_s6_lib
+bcc_tool
 ==========
 
 This project provides a user-space application for configuring the Blank Canvas Cape Spartan 6 (BCC S6), a Beaglebone cape which provides a Xilinx Spartan 6 FPGA connected to the Beaglebone I/O connectors. Find out more details about the BCC S6 here:
