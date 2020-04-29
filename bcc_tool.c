@@ -23,6 +23,9 @@
 #define VERSION "0.3"
 #define ARRAY_SIZE(a) (sizeof(a) / sizeof((a)[0]))
 
+#define BBB_I2C_BUS 2
+#define BBB_SPI_BUS 0
+
 static void help(void) __attribute__ ((noreturn));
 
 static void help(void)
@@ -90,7 +93,7 @@ int main(int argc, char **argv)
 	}
 
 	/* open up hardware */
-	if((bs = bcc_init(1, 1, 0, cape_addr, aux, verbose)) == NULL)
+	if((bs = bcc_init(BBB_I2C_BUS, BBB_SPI_BUS, 0, cape_addr, aux, verbose)) == NULL)
 	{
 		fprintf(stderr, "Couldn't access hardware\n");
 		exit(2);
